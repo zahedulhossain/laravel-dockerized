@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  app:
+    restart: "no"
+    volumes:
+      - ${DOCKER_VOLUME_APP_ROOT_DIR}:/var/www/html
+
+  # queue:
+  #   restart: "no"
+  #   volumes:
+  #     - ${DOCKER_VOLUME_APP_ROOT_DIR}:/var/www/html
+
+  # cron:
+  #   restart: "no"
+  #   volumes:
+  #     - ${DOCKER_VOLUME_APP_ROOT_DIR}:/var/www/html
